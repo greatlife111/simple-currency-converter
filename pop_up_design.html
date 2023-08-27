@@ -4,12 +4,14 @@
 <head>
   <title>Simple Curreny Converter</title>
   <link rel="stylesheet" href="pop_up.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 
 <body>
   <h1 class="title">Simple Currency Converter</h1>
 
   <select id="option1">
+    <option value = "CAD">CAD</option>
     <option value = "USD">USD</option>
     <option value = "CNY">CNY</option>
     <option value = "EUR">EUR</option>
@@ -25,6 +27,7 @@
   <input type="text" id="converted" placeholder=" " />
   
   <select id="option2">
+    <option value = "CAD">CAD</option>
     <option value = "USD">USD</option>
     <option value = "CNY">CNY</option>
     <option value = "EUR">EUR</option>
@@ -32,6 +35,11 @@
     <option value = "KRW">KRW</option>
     <option value = "PHP">PHP</option>
   </select>
+
+  <br>
+  <button id = "chart">Display Rate Chart</button>
+  <canvas id = "rateChart"></canvas>
+
 
   <script src="currency.js"></script>
 </body>
