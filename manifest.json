@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Exchange Rate Tracker",
+  "version": "1.0",
+  "description": "Track real-time exchange rate with this simple extension.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "pop_up_design.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["currency.js"]
+    }
+  ]
+}
