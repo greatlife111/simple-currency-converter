@@ -4,7 +4,6 @@
 <head>
   <title>Simple Curreny Converter</title>
   <link rel="stylesheet" href="pop_up.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 
 <body>
@@ -38,9 +37,14 @@
 
   <br>
   <button id = "chart">Display Rate Chart</button>
-  <canvas id = "rateChart"></canvas>
+  <div id = "chartContainer">
+    <canvas id = "rateChart"></canvas>
+  </div>
 
+  <button id="save">Save Current Pairs</button>
+  <div id="saved_pairs"></div>
 
+  <script src = "/path/to/Chart.min.js"></script>
   <script src="currency.js"></script>
 </body>
 
